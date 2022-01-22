@@ -6,6 +6,8 @@
 [![StyleCI][ico-styleci]][link-styleci]
 
 
+![preview wgnsy/weather](preview.jpg)
+
 ## Installation
 
 Via Composer
