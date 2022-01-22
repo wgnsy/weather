@@ -1,0 +1,40 @@
+{
+    "name": "prrwebcreate/weather",
+    "description": "A Laravel Package for Weather powered by openweathermap.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": " wgnsy PRR WebCreate",
+            "email": "wgnsy123@gmail.com"
+        }
+    ],
+    "keywords": ["Laravel", "Weather","openweathermap.org","PRR WebCreate"],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Prrwebcreate\\Weather\\": "src/"
+        }
+        
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Prrwebcreate\\Weather\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Prrwebcreate\\Weather\\WeatherServiceProvider"
+            ],
+            "aliases": {
+                "Weather": "Prrwebcreate\\Weather\\Facades\\Weather"
+            }
+        }
+    }
+}
